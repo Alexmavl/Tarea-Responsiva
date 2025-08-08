@@ -3,19 +3,19 @@ import Card from './Card';
 const CardSection = () => {
   const cards = [
     {
-      title: 'Servicio 1',
-      description: 'Descripción breve del servicio o producto ofrecido.',
-      imageUrl: 'https://via.placeholder.com/300x200',
+      title: 'Concentrados de Calidad',
+      description: 'Para cerdos, aves y animales de granja',
+      imageUrl: '/imagenes/desarrollina.png',
     },
     {
-      title: 'Servicio 2',
-      description: 'Otro servicio con beneficios destacados.',
-      imageUrl: 'https://via.placeholder.com/300x200',
+      title: 'Maiz',
+      description: 'Por menor y mayor.',
+      imageUrl: 'imagenes/maiz.jpg',
     },
     {
-      title: 'Servicio 3',
+      title: 'Productos de abarroteria',
       description: 'Ideal para quienes buscan calidad y confianza.',
-      imageUrl: 'https://via.placeholder.com/300x200',
+      imageUrl: '/imagenes/productos.jpg',
     },
   ];
 

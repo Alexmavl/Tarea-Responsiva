@@ -4,9 +4,9 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-blue-600 text-white">
+    <header className="bg-cyanÑ-600 text-white">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="text-2xl font-bold">MiLogo</div>
+        <div className="text-2xl font-bold">Vaspe</div>
 
         <nav className="hidden md:flex space-x-6">
           <a href="#" className="hover:text-gray-300">Inicio</a>
