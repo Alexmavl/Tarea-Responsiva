@@ -1,1 +1,161 @@
 @import "tailwindcss";
+
+/* --- HEADER BASE --- */
+.main-header {
+  background-color: #0891b2; 
+  color: white;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links a:hover {
+  opacity: 0.8;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none; /* Oculto en escritorio */
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  stroke: white;
+}
+
+.mobile-menu {
+  background-color: #06b6d4;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.mobile-menu a:hover {
+  opacity: 0.8;
+}
+
+/* --- TARJETAS BASE --- */
+.card-section {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card-wrapper {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card-wrapper img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card-wrapper h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-wrapper p {
+  color: #4b5563; 
+  margin-bottom: 0.75rem;
+}
+
+.card-wrapper a {
+  color: #2563eb;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.card-wrapper a:hover {
+  text-decoration: underline;
+}
+
+/* --- Móviles ≤ 600px --- */
+@media (max-width: 600px) {
+  /* Header */
+  .nav-links {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Tarjetas */
+  .card-section {
+    grid-template-columns: 1fr; /* 1 columna */
+  }
+
+  .card-wrapper {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+}
+
+/* --- Tabletas 601px – 1024px --- */
+@media (min-width: 601px) and (max-width: 1024px) {
+  /* Header */
+  .nav-links {
+    font-size: 1rem;
+  }
+
+  /* Tarjetas */
+  .card-section {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  }
+
+  .card-wrapper {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+
+/* --- Escritorio ≥ 1025px --- */
+@media (min-width: 1025px) {
+  /* Header */
+  .nav-links {
+    font-size: 1.1rem;
+  }
+
+  /* Tarjetas */
+  .card-section {
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  }
+
+  .card-wrapper {
+    font-size: 1.05rem;
+    padding: 1.25rem;
+  }
+}

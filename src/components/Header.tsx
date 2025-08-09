@@ -4,23 +4,24 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-cyanÑ-600 text-white">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="text-2xl font-bold">Vaspe</div>
+    <header className="main-header">
+      <div className="header-container">
+        <div className="logo">Vaspe</div>
 
-        <nav className="hidden md:flex space-x-6">
-          <a href="#" className="hover:text-gray-300">Inicio</a>
-          <a href="#" className="hover:text-gray-300">Servicios</a>
-          <a href="#" className="hover:text-gray-300">Contacto</a>
+        {/* Menú de escritorio */}
+        <nav className="nav-links">
+          <a href="#">Inicio</a>
+          <a href="#">Servicios</a>
+          <a href="#">Contacto</a>
         </nav>
 
-        {/* Botón de menú hamburguesa */}
+        {/* Botón menú hamburguesa */}
         <button
-          className="md:hidden focus:outline-none"
+          className="menu-toggle"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <svg
-            className="w-6 h-6"
+            className="icon"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -37,10 +38,10 @@ const Header = () => {
 
       {/* Menú móvil */}
       {menuOpen && (
-        <div className="md:hidden bg-blue-500 px-4 pb-4 space-y-2">
-          <a href="#" className="block">Inicio</a>
-          <a href="#" className="block">Servicios</a>
-          <a href="#" className="block">Contacto</a>
+        <div className="mobile-menu">
+          <a href="#">Inicio</a>
+          <a href="#">Servicios</a>
+          <a href="#">Contacto</a>
         </div>
       )}
     </header>

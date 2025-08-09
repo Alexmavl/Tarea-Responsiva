@@ -20,14 +20,15 @@ const CardSection = () => {
   ];
 
   return (
-    <section className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <section className="card-section">
       {cards.map((card, index) => (
-        <Card
-          key={index}
-          imageUrl={card.imageUrl}
-          title={card.title}
-          description={card.description}
-        />
+        <div className="card-wrapper" key={index}>
+          <Card
+            imageUrl={card.imageUrl}
+            title={card.title}
+            description={card.description}
+          />
+        </div>
       ))}
     </section>
   );
