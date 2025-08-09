@@ -1,69 +1,89 @@
-# React + TypeScript + Vite
+# 🛒 Tienda de Dylan – Proyecto Responsivo con React + TailwindCSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una **tienda web responsiva** creada con **React**, **TailwindCSS** y CSS personalizado con **Media Queries**. Incluye un **header adaptable**, una sección de **tarjetas dinámicas** y un **footer**. El objetivo es mostrar cómo aplicar **responsividad** en diferentes dispositivos y tamaños de pantalla.
 
-Currently, two official plugins are available:
+🚀 **Deploy en Vercel**: [tarea-responsiva.vercel.app](https://tarea-responsiva.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📌 Características
+- **Diseño responsivo** con **TailwindCSS** y **Media Queries** personalizadas.
+- **Header adaptable** con menú hamburguesa en móviles.
+- **Tarjetas ajustables** (1, 2 o 3 columnas según el tamaño de pantalla).
+- **Animaciones y transiciones suaves** con Tailwind.
+- **Iconos** integrados para el menú y enlaces.
+- Despliegue en **Vercel** para visualización en tiempo real.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🖼 Capturas de pantalla
+*(Aquí puedes pegar las imágenes de prueba que mencionaste)*
+![alt text](image.png)
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+![alt text](image-1.png)
+![alt text](image-2.png)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+![alt text](image-3.png)
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠 Tecnologías utilizadas
+- **React** – Librería de JavaScript para construir interfaces.
+- **TailwindCSS** – Framework CSS para estilos rápidos y responsivos.
+- **Media Queries** – Para ajustes de diseño personalizados.
+- **Heroicons / Lucide Icons** – Iconos SVG.
+- **Vercel** – Plataforma de despliegue.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🎯 Media Queries aplicadas
+
+📱 **Móviles** (≤ 600px)
+- Menú de navegación cambia a **hamburguesa**.
+- Tarjetas en **1 columna**.
+- Fuente y márgenes ajustados para legibilidad.
+
+💻 **Tabletas** (601px – 1024px)
+- Tarjetas en **2 columnas**.
+- Texto y espaciado optimizados para pantallas medianas.
+
+🖥 **Escritorio** (≥ 1025px)
+- Tarjetas en **3 columnas**.
+- Diseño optimizado con más espacio y proporciones adaptadas.
+
+```css
+/* Ejemplo simplificado */
+@media (max-width: 600px) {
+  .card-section { grid-template-columns: 1fr; }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  .card-section { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1025px) {
+  .card-section { grid-template-columns: repeat(3, 1fr); }
+}
+
+
+📥 Instalación y uso
+1️⃣ Clonar el repositorio
+bash
+git clone https://github.com/usuario/mi-repo.git
+cd mi-repo
+2️⃣ Instalar dependencias
+bash
+npm install
+3️⃣ Ejecutar en desarrollo
+bash
+npm run dev
+4️⃣ Abrir en el navegador
+Visita http://localhost:5173 o el puerto que indique la terminal.
+
+🌐 Deploy
+El proyecto está desplegado en Vercel:
+https://tarea-responsiva.vercel.app/
+
+📄 Licencia
+Este proyecto está bajo la licencia MIT – Libre para uso y modificación.
+
+markdown
+Con esto tu repositorio quedará **profesional y claro** para cualquiera que lo vea.  
+Si quieres, también puedo agregar al README un apartado para explicar **cómo modificar las Media Queries de `index.css`** para que quede más didáctico.
