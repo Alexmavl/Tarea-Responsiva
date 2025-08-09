@@ -63,27 +63,25 @@ Este proyecto es una **tienda web responsiva** creada con **React**, **TailwindC
 }
 
 
-📥 Instalación y uso
-1️⃣ Clonar el repositorio
+**-📥 Instalación y uso
+**-1️⃣ Clonar el repositorio
 bash
 git clone https://github.com/usuario/mi-repo.git
 cd mi-repo
+
 2️⃣ Instalar dependencias
+
 bash
 npm install
+
 3️⃣ Ejecutar en desarrollo
 bash
 npm run dev
+
 4️⃣ Abrir en el navegador
 Visita http://localhost:5173 o el puerto que indique la terminal.
 
 🌐 Deploy
+
 El proyecto está desplegado en Vercel:
 https://tarea-responsiva.vercel.app/
-
-📄 Licencia
-Este proyecto está bajo la licencia MIT – Libre para uso y modificación.
-
-markdown
-Con esto tu repositorio quedará **profesional y claro** para cualquiera que lo vea.  
-Si quieres, también puedo agregar al README un apartado para explicar **cómo modificar las Media Queries de `index.css`** para que quede más didáctico.
