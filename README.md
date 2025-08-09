@@ -17,7 +17,7 @@ Este proyecto es una **tienda web responsiva** creada con **React**, **TailwindC
 ---
 
 ## 🖼 Capturas de pantalla
-*(Aquí puedes pegar las imágenes de prueba que mencionaste)*
+
 ![alt text](image.png)
 
 ![alt text](image-1.png)
